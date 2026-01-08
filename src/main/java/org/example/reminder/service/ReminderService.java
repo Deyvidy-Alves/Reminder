@@ -1,0 +1,16 @@
+package org.example.reminder.service;
+import org.example.reminder.repository.ReminderRepository;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ReminderService {
+
+    private final ReminderRepository reminderRepository;
+
+    public ReminderService(ReminderRepository reminderRepository) {
+        this.reminderRepository = reminderRepository;
+    }
+
+    public createReminder()
+
+}
