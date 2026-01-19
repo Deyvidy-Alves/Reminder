@@ -34,4 +34,13 @@ public class ReminderService {
         reminderRepository.deleteById(id);
     }
 
+    public Reminder update(Long id, ReminderRequestDTO dto) {
+        Reminder entity = reminderRepository.findById(id).get();
+        entity.setTitle( dto.title());
+        entity.setDescription(dto.description());
+        entity.setDueDate(dto.dueDate());
+
+        return reminderRepository.save(entity);
+    }
+
 }
