@@ -30,6 +30,8 @@ public class ReminderService {
         return reminderRepository.findAll();
     }
 
-
+    public void delete(Long id) {
+        reminderRepository.deleteById(id);
+    }
 
 }
