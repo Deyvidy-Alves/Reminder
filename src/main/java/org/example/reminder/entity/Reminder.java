@@ -15,12 +15,12 @@ public class Reminder{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
 
-    @Column(nullable = false) //Garante que o banco não aceita nulo
+    @Column(nullable = false, length = 100) //Garante que o banco não aceita nulo
     private String title;
 
+    @Column(length = 255)
     private String description;
 
     @Column(nullable = false) //Garante que o banco não aceita nulo

@@ -1,9 +1,9 @@
 package org.example.reminder.dto;
+
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull; // Importante para datas
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-
 import java.time.LocalDateTime;
 
 public record ReminderRequestDTO (
@@ -16,6 +16,8 @@ public record ReminderRequestDTO (
 
     @NotNull(message = "A data é obrigatória")
     @Future(message = "A data deve ser no futuro")
-    LocalDateTime dueDate
+    LocalDateTime dueDate,
+
+    Boolean completed
 
 ) {}
