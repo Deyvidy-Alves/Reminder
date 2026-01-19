@@ -4,6 +4,8 @@ import org.example.reminder.entity.Reminder;
 import org.example.reminder.repository.ReminderRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ReminderService {
 
@@ -23,5 +25,11 @@ public class ReminderService {
 
         return reminderRepository.save(entity);
     }
+
+    public List<Reminder> getAll() {
+        return reminderRepository.findAll();
+    }
+
+
 
 }
