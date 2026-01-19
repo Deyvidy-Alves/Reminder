@@ -1,4 +1,5 @@
 package org.example.reminder.entity;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,7 +11,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
 @Entity
-
+@JsonPropertyOrder({ "id", "title", "description", "dueDate", "completed", "createdAt", "updatedAt" })
 public class Reminder{
 
     @Id
