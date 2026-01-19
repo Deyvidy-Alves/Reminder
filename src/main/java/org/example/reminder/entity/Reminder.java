@@ -77,6 +77,7 @@ public class Reminder{
 
     public LocalDateTime getCreatedAt() {
         return createdAt;
+
     }
 
     public void setCreatedAt(LocalDateTime createdAt) {
@@ -90,6 +91,5 @@ public class Reminder{
     public void setUpdatedAt(LocalDateTime updatedAt) {
         this.updatedAt = updatedAt;
     }
-
 
 }
