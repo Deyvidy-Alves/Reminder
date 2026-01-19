@@ -10,7 +10,7 @@ seguindo boas práticas de arquitetura em camadas e princípios **SOLID**.
 ## 🚀 Tecnologias Utilizadas
 
 -   **Java 21**
--   **Spring Boot 3**
+-   **Spring Boot 4.0.1**
 -   **Spring Data JPA (Hibernate)**
 -   **PostgreSQL**
 -   **Maven**
@@ -20,9 +20,9 @@ seguindo boas práticas de arquitetura em camadas e princípios **SOLID**.
 
 ## ⚙️ Pré-requisitos
 
--   **JDK 17** ou superior\
--   **PostgreSQL** (porta padrão 5432)\
--   **Maven** (opcional, caso utilize `mvnw`)\
+-   **JDK 21**
+-   **PostgreSQL** (porta padrão 5432)
+-   **Maven** (opcional, caso utilize `mvnw`)
 -   Cliente HTTP para testes (**Postman**, **Insomnia** ou **cURL**)
 
 ------------------------------------------------------------------------
