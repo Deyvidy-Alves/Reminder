@@ -41,8 +41,8 @@ public class ReminderService {
     }
 
     public Reminder update(Long id, ReminderRequestDTO dto) {
-        Reminder entity = reminderRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Lembrete não encontrado com id: " + id));
+        Reminder entity = reminderRepository.findById(id).orElseThrow(()
+                -> new ResourceNotFoundException("Lembrete não encontrado com id: " + id));
         entity.setTitle(dto.title());
         entity.setDescription(dto.description());
         entity.setDueDate(dto.dueDate());

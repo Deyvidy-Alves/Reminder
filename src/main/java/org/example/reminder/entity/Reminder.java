@@ -18,23 +18,23 @@ public class Reminder{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, length = 100) //Garante que o banco não aceita nulo
+    @Column(nullable = false, length = 100) //garante que o banco não aceita nulo
     private String title;
 
     @Column(length = 255)
     private String description;
 
-    @Column(nullable = false) //Garante que o banco não aceita nulo
+    @Column(nullable = false) //garante que o banco não aceita nulo
     private LocalDateTime dueDate;
 
-    @Column(nullable = false) //Garante que o banco não aceita nulo
+    @Column(nullable = false) //garante que o banco não aceita nulo
     private Boolean completed = false;
 
-    @CreationTimestamp //Atualiza a data sempre que alguém criar
-    @Column(updatable = false) //Não deixa mudarem a data depois de criar
+    @CreationTimestamp //atualiza a data sempre que alguém criar
+    @Column(updatable = false) //não deixa mudarem a data depois de criar
     private LocalDateTime createdAt;
 
-    @UpdateTimestamp //Atualiza a data sempre que alguém editar
+    @UpdateTimestamp //atualiza a data sempre que alguém editar
     private LocalDateTime updatedAt;
 
     public Long getId() {
